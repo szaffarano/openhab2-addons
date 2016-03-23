@@ -51,6 +51,7 @@ public class MySensorsReader implements MySensorsUpdateListener, Runnable {
                 logger.debug(line);
                 MySensorsMessage msg = MySensorsMessageParser.parse(line);
                 if (msg != null) {
+                    logger.debug("Message read: node={}, type={}, subtype={}", msg.getNodeId(), msg.getMsgType(), msg.getSubType());
                     MySensorsStatusUpdateEvent event = new MySensorsStatusUpdateEvent(msg);
                     for (MySensorsUpdateListener mySensorsEventListener : mysCon.updateListeners) {
                         mySensorsEventListener.statusUpdateReceived(event);

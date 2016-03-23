@@ -130,6 +130,8 @@ public class MySensorsBindingConstants {
     public static final int MYSENSORS_SUBTYPE_I_REQUEST_SIGNING = 15;
     public static final int MYSENSORS_SUBTYPE_I_GET_NONCE = 16;
     public static final int MYSENSORS_SUBTYPE_I_GET_NONCE_RESONSE = 17;
+    public static final int MYSENSORS_SUBTYPE_I_HEARTBEAT = 18;
+    public static final int MYSENSORS_SUBTYPE_I_HEARTBEAT_RESPONSE = 22;
 
     public static final int MYSENSORS_NUMBER_OF_RETRIES = 5;
     public static final int[] MYSENSORS_RETRY_TIMES = { 0, 100, 500, 1000, 2000 };
